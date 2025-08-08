@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Pakistan Flag</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      h1 {
+        color: wheat;
+      }
+      .box{
+        width: 600px;
+        height: 400px;
+        background-color: #01411c;
+      }
+      .white{
+        width: 150px;
+        height: 400px;
+        background-color: white;
+      }
+      .star {
+             width: 100px;
+             height: 100px;
+             background-color: rgb(255, 255, 255);
+             clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+             transform: rotate(50deg); /* Adjust the rotation of the star */
+             position: relative;
+             float: right;
+             top: 100px;
+             right: 150px;
+             z-index: 1;
+            }  
+            .moon {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background-color: white;
+            float: right;
+            top: 100px;
+            right: 50px;
+            position: relative;
+            transform: rotate(-50deg);
+        }
+
+        .cutout {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color:#01411c;
+        
+            position: absolute;
+            top: 10px;
+            left: 30px;
+        } 
+        h1{
+            margin: 10px 360px;
+            font-size: 3rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }  
+    
+        footer{
+            width: 100%;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgb(34, 34, 34);
+            color: white;
+            text-align: center;
+        }
+        .box{
+            margin-left: 0px;
+        }
+        @media (min-width:600px){
+       
+          h1{
+            font-size: 1rem;
+            text-align: center;
+          }
+         .box{
+            margin-left: 300px;
+         }
+          footer{
+            width: 100%;
+          }
+          #Flag{
+           margin: 0px auto;
+          }
+        }
+    </style>
+  </head>
+  <body>
+      <div class="main">
+        <h1>Pakistani Flag CSS BASED</h1>
+        <div class="green box" id="Flag">
+            <div class="star"></div>
+            <div class="moon">
+                <div class="cutout"></div>
+            </div>
+        <div class="white"></div>
+
+        </div>
+        <footer>&copy Muhammad Rehan</footer>
+    </div>
+  </body>
+</html>
+
+
